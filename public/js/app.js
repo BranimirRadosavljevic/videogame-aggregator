@@ -19335,8 +19335,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Programiranje\PHP\Code\laracasts-videogames\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Programiranje\PHP\Code\laracasts-videogames\resources\css\main.css */"./resources/css/main.css");
+__webpack_require__(/*! D:\Programiranje\PHP\Code\videogame-aggregator\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Programiranje\PHP\Code\videogame-aggregator\resources\css\main.css */"./resources/css/main.css");
 
 
 /***/ })
