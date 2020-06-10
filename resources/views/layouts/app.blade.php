@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laracasts Video Games</title>
     <link rel="stylesheet" href="/css/main.css">
+    <livewire:styles>
 </head>
 
 <body class="bg-gray-900 text-white">
@@ -52,6 +53,8 @@
             Powered By <a href="#" class="underline hover:text-gray-400">IGDB API</a>
         </div>
     </footer>
+
+    <livewire:scripts>
 
 </body>
 
