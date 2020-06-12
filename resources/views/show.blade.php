@@ -8,7 +8,7 @@
         </div>
         <div class="lg:ml-12 lg:mr-64">
             <h2 class="font-semibold text-4xl leading-tight mt-1">{{ $game['name']}}</h2>
-            <div class="text-gray-400">
+            <div class="text-gray-500">
                 <span>
                     {{ $game['genres']}}
                 </span>
@@ -19,6 +19,7 @@
                     {{ $game['platforms']}}
                 </span>
             </div>
+            <div class="text-xs text-gray-300 italic">Release date: {{ $game['releaseDate'] }}</div>
             <div class="flex flex-wrap items-center mt-8">
                 <div class="flex items-center">
                     <div id="memberRating" class="w-16 h-16 bg-gray-800 rounded-full relative text-sm">

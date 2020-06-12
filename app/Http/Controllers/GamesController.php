@@ -70,9 +70,10 @@ class GamesController extends Controller
         return collect($game)->merge([
             'coverImageUrl' => Str::replaceFirst('thumb', 'cover_big', $game['cover']['url']),
             'genres' => collect($game['genres'])->pluck('name')->implode(', '),
-            'involvedCompanies' => $game['involved_companies'][0]['company']['name'],
+            'involvedCompanies' => isset($game['involved_companies']) ? $game['involved_companies'][0]['company']['name'] : '',
             'platforms' => collect($game['platforms'])->pluck('abbreviation')->implode(', '),
             'memberRating' => array_key_exists('rating', $game) ? round($game['rating']) : '0',
+            'releaseDate' => isset($game['first_release_date']) ? Carbon::parse($game['first_release_date'])->format('M d, Y') : 'TBA',
             'criticRating' => array_key_exists('aggregated_rating', $game) ? round($game['aggregated_rating']) : '0',
             'trailer' => isset($game['videos']) ? 'https://youtube.com/embed/'.$game['videos'][0]['video_id'] : null,
             'screenshots' => isset($game['screenshots']) ? collect($game['screenshots'])->map(function($screenshot){
